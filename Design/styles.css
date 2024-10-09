@@ -1,0 +1,586 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* This will push elements to opposite sides */
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    color: #ff00ff; /* Purple for Noor Fatima */
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.navigation a:hover {
+    color: #ff00ff; /* Purple hover effect */
+}
+
+/* Additional optional styling */
+.navigation {
+    display: flex;
+    align-items: center;
+}
+/* Banner styles */
+/* Banner styles */
+.image-banner {
+    background-image: url('images/g22.webp'); /* Replace with your actual image path */
+    background-size: cover;      /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh;               /* Sets the banner height to 100% of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.welcome-message {
+    text-align: center;
+}
+
+.intro-text {
+    font-size: 40px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.name-text {
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.profession-text {
+    font-size: 22px;
+    color: white;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #ff00ff; /* Purple button background */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.download-button:hover {
+    background-color: #cc00cc; /* Darker purple on hover */
+}
+
+/* Adjust about section */
+/* Adjust the about section container */
+/* Adjust the about section container */
+.about-container {
+    display: flex;
+    flex-direction: row-reverse; /* Image on the right, text on the left */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center items vertically */
+    text-align: left; /* Align text to the left within the text container */
+    margin: 0 auto;
+    width: 80%; /* Adjust width to not stretch the whole screen */
+    padding: 20px; /* Add padding for spacing */
+}
+
+/* Style for the profile picture (now rectangular) */
+/* About section styles */
+/* Adjust the about section container */
+.about-container {
+    display: flex;
+    flex-direction: row-reverse; /* Image on the right, text on the left */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center items vertically */
+    text-align: left; /* Align text to the left within the text container */
+    margin: 0 auto;
+    width: 80%; /* Adjust width to not stretch the whole screen */
+    padding: 20px; /* Add padding for spacing */
+}
+
+/* Style for the profile picture (now rectangular) */
+.about-container img.profile-pic {
+    border-radius: 0; /* Keep image rectangular */
+    max-width: 500px; /* Set a larger maximum width for the image */
+    height: auto;
+    margin-left: 40px; /* Add some space between the image and text */
+}
+
+/* Style for the text on the left */
+.about-text {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left; /* Text will be aligned to the left */
+    color: #333;
+}
+
+/* Ensure the section title is aligned */
+.about h1.center {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+/* Adjust personal-info section for horizontal display */
+.personal-info {
+    display: flex;
+    justify-content: space-around; /* Distributes space between items */
+    align-items: center;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid #ddd; /* Optional: Add a border to separate it */
+    padding-top: 20px;
+}
+
+/* Each personal-item container will have some margin and text alignment */
+.personal-item {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.personal-item h4 {
+    margin-bottom: 5px; /* Space between label and content */
+    color: #333;
+}
+
+.personal-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* About container with flex */
+/* About container with flex */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Profile picture */
+.about-container img.profile-pic {
+    border-radius: 0;
+    max-width: 500px;
+    height: auto;
+    margin-left: 40px;
+}
+
+/* Wrapper for both about text and personal info */
+.about-text-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack the about text and personal info vertically */
+    max-width: 600px;
+}
+
+/* About text */
+.about-text {
+    margin-bottom: 20px; /* Add spacing below the about text */
+}
+
+/* Personal info section */
+.personal-info {
+    display: flex;
+    justify-content: space-between; /* Align personal items in one row */
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+/* Each personal item */
+.personal-item {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.personal-item h4 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.personal-item p {
+    font-size: 16px;
+    color: #555;
+}
+/* Center the About Me heading */
+.center {
+    text-align: center;
+    font-size: 32px;  /* Adjust the size as needed */
+    margin: 20px 0;   /* Add margin to give it space from other elements */
+    font-weight: bold; /* Make the font bold if desired */
+}
+
+/* General styling for the education section */
+/* General styling for the education section */
+.education {
+    padding: 20px;
+}
+
+.center {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.timeline1 {
+    margin-bottom: 40px; /* Space below */
+}
+
+/* Style for the row of timeline items */
+.timeline-row1 {
+    display: flex; /* Align items in a row */
+    justify-content: space-between; /* Space between items */
+    position: relative; /* Relative position for absolute children */
+}
+
+/* Style for each timeline item */
+.timeline-item1 {
+    text-align: center; /* Center content */
+    position: relative; /* For positioning the line */
+    margin: 0 10px; /* Space between items */
+    flex: 1; /* Make items flexible to take equal space */
+}
+
+/* Styling for the date */
+.date1 {
+    font-weight: bold; /* Make the year bold */
+}
+
+/* Styling for the degree name */
+.degree-name {
+    font-size: 20px; /* Degree name size */
+    margin: 10px 0; /* Space above and below degree name */
+}
+
+/* Styling for the timeline line */
+.timeline-line {
+    width: 100%; /* Full width */
+    height: 2px; /* Thickness of the line */
+    background-color: black; /* Line color */
+    margin: 10px 0; /* Space above and below the line */
+}
+
+/* Styling for the university details */
+.university-details {
+    margin-top: 10px; /* Space between timeline line and university details */
+}
+
+
+.skills {
+    padding: 20px;
+}
+
+.center {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    display: flex; /* Use flexbox for the container */
+    flex-wrap: wrap; /* Allow items to wrap into new lines */
+    justify-content: space-between; /* Space items evenly */
+}
+
+.skills-item {
+    flex: 0 0 48%; /* Make each skills item take up about 48% of the width */
+    margin-bottom: 20px; /* Space between rows */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+.skill {
+    margin: 10px 0; /* Space between skills */
+}
+
+.skill-bar-container {
+    background-color: #f0f0f0; /* Light gray background for the skill bar */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow */
+    position: relative; /* Allow positioning of the percentage text */
+    height: 15px; /* Decreased height for a thinner bar */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.skill-bar {
+    height: 100%; /* Full height of the container */
+    transition: width 0.5s ease-in-out; /* Smooth transition for the skill level */
+}
+
+.skill-level {
+    background-color: #6a1b9a; /* Purple color for skill level */
+    height: 100%; /* Full height */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.percentage {
+    margin-left: 10px; /* Space between bar and percentage text */
+    font-weight: bold; /* Make percentage text bold */
+    color: #333; /* Dark color for contrast */
+    display: inline-block; /* Allow percentage to sit next to the skill bar */
+    vertical-align: middle; /* Align percentage vertically with the bar */
+    position: absolute; /* Position it absolutely within the skill-bar container */
+    right: 0; /* Align to the right side */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 500px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="text"], 
+.contact-form input[type="email"], 
+.contact-form textarea {
+    width: 100%; /* Take up full width of the parent */
+    padding: 15px; /* Increase padding for larger input boxes */
+    font-size: 16px; /* Increase font size for better readability */
+    border: 1px solid #ccc; /* Add a subtle border */
+    border-radius: 5px; /* Optional rounded corners */
+    box-sizing: border-box; /* Ensure padding doesn't exceed container width */
+}
+
+.contact-form textarea {
+    height: 150px; /* Increase the height of the message box */
+    resize: vertical; /* Allow the user to resize the textarea vertically */
+}
+
+button {
+    padding: 15px 30px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.center {
+    text-align: center;
+}
+
+button {
+    padding: 20px 50px; /* Increase padding for larger button */
+    font-size: 18px; /* Increase font size */
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 10px; /* Optional: rounded corners */
+    cursor: pointer;
+    width: 100%; /* Make the button take full width of its parent container */
+    max-width: 300px; /* Optional: limit the max width */
+    transition: background-color 0.3s ease; /* Add smooth hover effect */
+}
+
+button:hover {
+    background-color: darkpurple; /* Darker shade when hovered */
+}
+
+
+
+
+.experience-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Center items horizontally */
+    width: 400px; /* Set a fixed width for the section */
+    margin: 20px auto; /* Center the section with auto margins */
+}
+
+.experience {
+    width: 100%;
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.year {
+    font-size: 18px;
+    margin-right: 20px;
+    width: 100px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: purple;
+    z-index: 1; /* Ensure the circle is above the line */
+}
+
+.line {
+    width: 2px;
+    height: 80px; /* Adjust the height of the line as needed */
+    background-color: purple;
+    position: absolute;
+    top: 15px; /* Start the line right after the circle */
+}
+
+.field {
+    font-size: 18px;
+}
+
+/* Remove line for the last item */
+.experience-item:last-child .line {
+    display: none;
+}
+
+       
+
+.profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows, height adjusts automatically */
+    gap: 20px; /* Space between items */
+    margin: 20px auto; /* Center the grid section */
+    max-width: 800px; /* Optional: set a maximum width for the grid */
+}
+
+.profile-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items within the profile-item */
+    text-align: center;
+    border: 1px solid #ccc; /* Border around the profile item */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Space inside the box */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.profile-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.profile-item img {
+    max-width: 50px; /* Limit the width of the icons to 50px */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 5px; /* Optional: add some rounded corners */
+}
+
+.center {
+    text-align: center; /* Center the section heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.clients-container {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    flex-wrap: wrap; /* Allows items to wrap to the next line if the screen is too small */
+    gap: 20px; /* Adds space between client items */
+    padding: 20px; /* Optional: Adds padding around the container */
+}
+
+.client img {
+    max-width: 100px; /* Set a maximum width for the client logos */
+    height: auto; /* Maintain aspect ratio of logos */
+}
+
+#clients h2 {
+    text-align: center; /* Center the Clients heading */
+    margin-bottom: 20px; /* Space between heading and the client logos */
+}
+
+
+.portfolio {
+    margin-top: 50px;
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.portfolio h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: purple;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Three columns (left, center, right) */
+    gap: 0; /* Remove any gap between the images */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-left, .portfolio-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* Remove any gap between the images in these columns */
+}
+
+.portfolio-center {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-item {
+    margin: 0; /* Remove any margin around the images */
+    padding: 0; /* Remove padding */
+    border: none; /* Remove border */
+}
+
+.portfolio-item img {
+    width: 100%; /* Ensure images fill the container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.portfolio-item.large img {
+    height: 300px; /* Fixed height for the large image */
+    object-fit: cover; /* Ensure the image covers the container */
+}
